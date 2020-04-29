@@ -87,9 +87,9 @@ if __name__ == '__main__':
                     ouput.write('\n')
                 continue
             print(line)
-            ans = baiduAPI_translate_main(line, 'en') # 这里调节参数选择中间层语言
+            ans = baiduAPI_translate_main(line, 'zh')
             time.sleep(1)
-            ans = baiduAPI_translate_main(ans, 'zh')
+            ans = baiduAPI_translate_main(ans, 'en')
             time.sleep(1)
             print(ans)
             with open('output.txt', 'a') as ouput:
